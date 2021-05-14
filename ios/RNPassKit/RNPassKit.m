@@ -31,11 +31,8 @@ RCT_EXPORT_METHOD(addPass:(NSString *)base64Encoded
   }
   
   dispatch_async(dispatch_get_main_queue(), ^{
-    UIApplication *sharedApplication = RCTSharedApplication();
-    UIWindow *window = sharedApplication.keyWindow;
-    if (window) {
-      UIViewController *rootViewController = window.rootViewController;
-      if (rootViewController) {
+    UIViewController *rootViewController = [self getPresenterViewController];
+    if (rootViewController) {
         PKAddPassesViewController *addPassesViewController = [[PKAddPassesViewController alloc] initWithPass:pass];
         addPassesViewController.delegate = self;
         [rootViewController presentViewController:addPassesViewController animated:YES completion:^{
@@ -81,5 +78,16 @@ RCT_EXPORT_METHOD(addPass:(NSString *)base64Encoded
 - (NSArray<NSString *> *)supportedEvents {
   return @[@"addPassesViewControllerDidFinish"];
 }
+
+#pragma mark - Helpers
+ ​
+ -(UIViewController*)getPresenterViewController {
+     UIApplication *sharedApplication = RCTSharedApplication();
+     UIViewController *presentingViewcontroller = sharedApplication.delegate.window.rootViewController;
+     if(presentingViewcontroller.presentedViewController != nil) {
+         presentingViewcontroller = presentingViewcontroller.presentedViewController;
+     }
+     return presentingViewcontroller;
+ }
 
 @end
