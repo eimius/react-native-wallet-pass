@@ -1,6 +1,6 @@
 {
-  "name": "react-native-passkit-wallet",
-  "version": "0.1.4",
+  "name": "react-native-wallet-pass",
+  "version": "1.0.0",
   "description": "React Native module to handle PassKit pass.",
   "main": "index",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miyabi/react-native-passkit-wallet.git"
+    "url": "git+https://github.com/eimius/react-native-wallet-pass.git"
   },
   "keywords": [
     "react-native",
@@ -22,9 +22,9 @@
   "author": "Masayuki Iwai <miyabi@mybdesign.com> (http://mybdesign.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miyabi/react-native-passkit-wallet/issues"
+    "url": "https://github.com/eimius/react-native-wallet-pass/issues"
   },
-  "homepage": "https://github.com/miyabi/react-native-passkit-wallet#readme",
+  "homepage": "https://github.com/eimius/react-native-wallet-pass#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.0",
     "babel-preset-flow": "^6.23.0",

@@ -1,4 +1,4 @@
-# react-native-passkit-wallet
+# react-native-wallet-pass
 React Native module to handle PassKit pass.
 
 ## Installation
@@ -6,7 +6,7 @@ React Native module to handle PassKit pass.
 ### 1. Install library from `npm`
 
 ```shell
-npm install --save react-native-passkit-wallet
+npm install --save react-native-wallet-pass
 ```
 
 ### 2. Link native code
@@ -20,7 +20,7 @@ Add line to your project target section in your Podfile:
 ```diff
 target 'YourProjectTarget' do
 
-+   pod 'react-native-passkit-wallet', path: '../node_modules/react-native-passkit-wallet'
++   pod 'react-native-wallet-pass', path: '../node_modules/react-native-wallet-pass'
 
 end
 ```
@@ -34,7 +34,7 @@ target 'YourProjectTarget' do
 +   pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
 +   pod 'React', path: rn_path
 
-  pod 'react-native-passkit-wallet', path: '../node_modules/react-native-passkit-wallet'
+  pod 'react-native-wallet-pass', path: '../node_modules/react-native-wallet-pass'
 
 end
 
@@ -52,7 +52,7 @@ end
 Run command below:
 
 ```shell
-react-native link react-native-passkit-wallet
+react-native link react-native-wallet-pass
 ```
 
 ### 3. Android configuration
@@ -92,7 +92,7 @@ react-native link react-native-passkit-wallet
 ## Usage
 
 ```jsx
-import PassKit, { AddPassButton } from 'react-native-passkit-wallet'
+import PassKit, { AddPassButton } from 'react-native-wallet-pass'
 ```
 
 ### Check whether the device supports adding passes
