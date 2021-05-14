@@ -1,6 +1,6 @@
 {
   "name": "react-native-wallet-pass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native module to handle PassKit pass.",
   "main": "index",
   "scripts": {
