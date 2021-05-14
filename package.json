@@ -20,6 +20,7 @@
     "Wallet"
   ],
   "author": "Masayuki Iwai <miyabi@mybdesign.com> (http://mybdesign.com/)",
+  "contributors": ["Eimantas Tucas <eimantast@wix.com>"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eimius/react-native-wallet-pass/issues"
