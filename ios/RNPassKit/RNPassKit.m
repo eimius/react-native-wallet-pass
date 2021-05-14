@@ -40,9 +40,7 @@ RCT_EXPORT_METHOD(addPass:(NSString *)base64Encoded
           resolve(nil);
         }];
         return;
-      }
     }
-    
     reject(@"", @"Failed to present PKAddPassesViewController.", nil);
   });
 }
@@ -80,14 +78,14 @@ RCT_EXPORT_METHOD(addPass:(NSString *)base64Encoded
 }
 
 #pragma mark - Helpers
- ​
- -(UIViewController*)getPresenterViewController {
-     UIApplication *sharedApplication = RCTSharedApplication();
-     UIViewController *presentingViewcontroller = sharedApplication.delegate.window.rootViewController;
-     if(presentingViewcontroller.presentedViewController != nil) {
-         presentingViewcontroller = presentingViewcontroller.presentedViewController;
-     }
-     return presentingViewcontroller;
- }
+
+- (UIViewController *) getPresenterViewController {
+    UIApplication *sharedApplication = RCTSharedApplication();
+    UIViewController *presentingViewcontroller = sharedApplication.delegate.window.rootViewController;
+    if (presentingViewcontroller.presentedViewController != nil) {
+        presentingViewcontroller = presentingViewcontroller.presentedViewController;
+    }
+    return presentingViewcontroller;
+}
 
 @end
