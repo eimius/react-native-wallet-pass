@@ -18,8 +18,8 @@ declare class PassKit {
 }
 
 interface AddPassButtonStyle {
-  black,
-  blackOutline
+  black: number
+  blackOutline: number
 }
 
 interface AddPassButtonProps extends ViewProps {
