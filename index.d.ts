@@ -1,7 +1,11 @@
 import * as React from 'react';
-import { EmitterSubscription, ViewProperties } from 'react-native';
+import { EmitterSubscription, ViewProps } from 'react-native';
+
 
 declare class PassKit {
+  static AddPassButtonWidth: number
+  static AddPassButtonHeight: number
+  static AddPassButtonStyle: AddPassButtonStyle
   static canAddPasses(): Promise<boolean>;
   static addPass(base64Encoded: string, fileProvider?: string): Promise<void>;
   static presentAddPassesViewController(base64Encoded: string): Promise<void>;
@@ -13,7 +17,12 @@ declare class PassKit {
   static removeEventListener(eventType: string, listener: Function): void;
 }
 
-interface AddPassButtonProps extends ViewProperties {
+interface AddPassButtonStyle {
+  black: number
+  blackOutline: number
+}
+
+interface AddPassButtonProps extends ViewProps {
   addPassButtonStyle: number;
   onPress: Function;
 }
