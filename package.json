@@ -1,6 +1,6 @@
 {
   "name": "react-native-wallet-pass",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "React Native module to handle PassKit pass.",
   "main": "index",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eimius/react-native-wallet-pass.git"
+    "url": "git+https://github.com/wix-incubator/react-native-wallet-pass.git"
   },
   "keywords": [
     "react-native",
@@ -23,9 +23,9 @@
   "contributors": ["Eimantas Tucas <eimantast@wix.com>"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eimius/react-native-wallet-pass/issues"
+    "url": "https://github.com/wix-incubator/react-native-wallet-pass/issues"
   },
-  "homepage": "https://github.com/eimius/react-native-wallet-pass#readme",
+  "homepage": "https://github.com/wix-incubator/react-native-wallet-pass#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.0",
     "babel-preset-flow": "^6.23.0",
